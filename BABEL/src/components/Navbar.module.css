@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+.nav {
+  height: 70px;
+  width: 100%;
+  font-family: "Teko", sans-serif;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: white; */
+  background-color: #242836;
+  /* background-color: #1c1f25; */
+
+  position: fixed; /* Add this line */
+  top: 0; /* Add this line */
+  z-index: 100; /* Optional: this ensures the navbar stays on top of other elements */
+}
+
+
+ul{
+    /* flex: 1; */
+    margin-right: 40px;
+    width: 500px;
+    list-style: none;
+    text-align: center;
+    /* background-color: aquamarine; */
+}
+ul li{
+    display: inline-block;
+    width: 110px;
+    margin: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    color: #00BADD;
+    /* color: white; */
+    font-size: 28px;
+}
+.div{
+    margin-right: auto;
+    padding-bottom:  0% ;
+}
+
+.logo{
+    /* background-color: greenyellow; */
+    height: 70px;
+    margin-top: 4px;
+}
+
+.removea
+{
+    text-decoration: none;
+    color: #00BADD;
+    font-size: 28px;
+    font-weight: 500;
+    font-family: "Teko", sans-serif;
+}
+
+.removea:hover {
+    color: rgb(255, 255, 255); /* Change the color on hover */
+    
+  }

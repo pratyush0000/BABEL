@@ -1,0 +1,23 @@
+/* Selectbox.module.css */
+.selectboxcss {
+  
+  width: 300px;
+  height: 40px;
+  /* background-color: transparent; */
+  background-color: #1c1f25;
+  margin-left: auto; /* This will push the Selectbox to the right of its container */
+  margin-right: 40px;
+  border: 3px solid #00BADD;
+  border-radius: 10px;
+  outline: none;
+  /* color: #00BADD; */
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+}
+
+.inlineheading
+{
+  display: inline;
+}
