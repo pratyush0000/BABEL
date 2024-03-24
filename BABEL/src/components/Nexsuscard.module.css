@@ -10,8 +10,8 @@ body{
   /* background-color: aquamarine; */
   height: 100%;
   width: 24%;
-  margin-left: 4px;
-  margin-right: 4px;
+  margin-left: 10px;
+  margin-right: 10px;
   display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
