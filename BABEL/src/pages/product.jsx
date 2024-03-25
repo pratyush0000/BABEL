@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import Ellipses from "../components/Ellipses";
 import { useState,useEffect } from 'react'
 import axios from "axios";
 import { v4 as uuidv4 } from 'uuid';
@@ -146,6 +147,7 @@ const getspeech = (stringToSpeak, language) => {
   <div className={styles.container}>
     <Navbar>
     </Navbar>
+    <Ellipses/>
   <div className={styles.flexcontainer}>
    
     <div className={styles.flexelement}>

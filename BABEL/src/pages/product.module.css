@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 
 /* yes */
 body{
@@ -17,7 +17,7 @@ body{
     height: 100%;
     width: 100%;
     /* background-color: green; */
-    background-color: #242836;
+    /* background-color: #242836; */
 }
 
 
@@ -51,14 +51,19 @@ body{
 .inputboxx{
     height: 500px;
     width: 550px;
+    font-weight: 600;
+    font-size: 16px;
     /* background-color: #242836; */
-    background-color: #1c1f25;
-    color: white;
+    /* background-color: #1c1f25; */
+    background-color: rgba(253,239,230,0.7);
+    /* color: white; */
+    color: RGBA(0, 20, 100, 0.7);
     margin-top: 10px;
     margin-right: 0px;
     margin-left: 0px;
     border-radius: 10px;
-    border: 2px solid #00BADD;
+    /* border: 2px solid #00BADD; */
+    border: none;
     vertical-align: top;
     word-wrap: break-word;
     outline: none;
@@ -69,7 +74,8 @@ body{
 
 /* yes */
 .submitbutton {
-    background-color: #00BADD;
+    /* background-color: #00BADD; */
+    background-color: RGBA(0, 20, 100, 0.9);
     border: 0;
     border-radius: 6px;
     box-sizing: border-box;
@@ -77,16 +83,18 @@ body{
     height: 40px;
     width: 175px;
     transition: all 0.3s ease; /* Add this line for smooth transition */
-    font-family: "Teko", sans-serif;
-    color: #242836;
-    font-size: 20px;
+    font-family: "Lexend Deca", sans-serif;
+    /* color: #242836; */
+    color: rgb(252,239,230);
+    font-size: 17px;
     margin-left: 1%;
     margin-right: 1%;
   }
   
   /* yes */
   .submitbutton:hover {
-    background-color: #008999; /* Change color on hover */
+    /* background-color: #008999; */
+    background-color: RGBA(50, 70, 150, 0.9);
     cursor: pointer; /* Change cursor to pointer on hover */
   }
   
@@ -112,15 +120,17 @@ body{
 {
     display: flex;
     flex-direction: row;
-    font-family: "Teko", sans-serif;
-    font-size: 25px;
+    font-family: "Lexened Deca", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
     color: white;
     /* background-color: red; */
 }
 
 /* yes */
 .messagetofrom{
-    color: white;
+    /* color: white; */
+    color: RGBA(0, 20, 100, 0.7);
     /* background-color: red; */
     width: 100px;
     height: 55px;

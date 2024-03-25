@@ -42,9 +42,9 @@ const home = () => {
 
           <div style={{ marginTop: '60px' }}>
             {/* <button className={styles.button}>Test It Out</button> */}
-            <Link to="/product" className={styles.button}>Test It Out</Link>
+            <Link to="/product" className={styles.button1}>Test It Out</Link>
             {/* <button className={styles.button}>Who Are We?</button> */}
-            <Link to="/aboutus" className={styles.button}>Who Are We?</Link>
+            <Link to="/aboutus" className={styles.button2}>Who Are We?</Link>
           </div>
         </div>
         {/* Image div */}
