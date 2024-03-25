@@ -1,0 +1,31 @@
+
+.ellipsesContainer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none; /*ellipses dont interfere with other elements, stay behind monkey*/
+}
+
+.ellipse {
+  width: 3000px;
+  height: 3000px;
+  border-radius: 50%;
+}
+
+.bottomLeft {
+  margin-bottom: -1400px; /*ellipse height at bottom*/
+  margin-left: -1000px; /* ellipse width at left*/
+  /* background-color: RGBA(82,99,216,0.2); */
+  background-color: #D4D8F5;
+}
+
+.topRight {
+  margin-top: -2300px; /* ellipse height at top */
+  margin-right: -1000px; /* ellipse width at right */
+  background-color: #A1CCB0;
+}

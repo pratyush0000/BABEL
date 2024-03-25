@@ -172,7 +172,7 @@ const getspeech = (stringToSpeak, language) => {
 
     <div className={styles.submitplacement}>
       <button onClick={() => getdata(inp)} className={styles.submitbutton}>Submit</button>
-      <button onClick={()=>getspeech(chatoutp,to)}>Listen</button>
+      <button onClick={()=>getspeech(chatoutp,to)} className={styles.submitbutton}>Listen</button>
     </div>
 </div>
  )
