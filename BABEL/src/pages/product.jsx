@@ -1,17 +1,11 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
-
-
 import { useState,useEffect } from 'react'
 import axios from "axios";
 import { v4 as uuidv4 } from 'uuid';
 import Selectbox from "../components/Selectbox"
 import styles from './product.module.css'
 import Languages from '../components/Languages';
-import Nexsuscard from '../components/Nexsuscard';
-import diyad from '../assets/diyad.jpeg'
-import pratyushk from '../assets/pratyushk.jpeg'
-import urvig from '../assets/uggg.jpg'
 
 const Product = () => {
   const Datatosend={
@@ -152,7 +146,7 @@ const getspeech = (stringToSpeak, language) => {
   <div className={styles.container}>
     <Navbar>
     </Navbar>
-  <div id="section1" className={styles.flexcontainer}>
+  <div className={styles.flexcontainer}>
    
     <div className={styles.flexelement}>
       <div className={styles.flexcontainerlang}>
@@ -180,40 +174,8 @@ const getspeech = (stringToSpeak, language) => {
       <button onClick={() => getdata(inp)} className={styles.submitbutton}>Submit</button>
       <button onClick={()=>getspeech(chatoutp,to)}>Listen</button>
     </div>
-    
-    <div className={styles.sectwobg}>
-      <div className={styles.meettheteam}>
-          <div id="section2" className={styles.mttheading2}>
-          PROJECT
-          </div>
-
-          <div className={styles.textpara}>
-          <br/>
-        
-          Welcome to Babel, the fusion of linguistic artistry and cutting-edge technology inspired by the Tower of Babel from the Book of Genesis. Our commitment is clear – to transcend language barriers and propel communication to new heights. At Babel, we redefine the art of translation through the seamless integration of advanced AI technologies.
-          Our mission goes beyond mere translation; we aspire to preserve the original meaning and emotion in a nuanced and faithful rendition. Unlike traditional methods, our platform utilizes sophisticated linguistic models that extend beyond line-by-line translation, providing a comprehensive solution for text, paragraphs, and phrases.
-          The core of Babel lies in the symbiotic relationship between art and technology. Precision and innovation are our guiding principles as we transform language translation into an immersive experience. The intricate dance between human expression and computational power is reflected in our approach, ensuring a harmonious blend that enhances understanding.
-          As we venture into the realms of literature, our vision expands beyond linguistic conversion. Babel aims to make technology a gateway to accessibility. We introduce features such as the transformation of entire PDFs, demonstrating a commitment to practicality and user-friendly solutions. Furthermore, the utilization of generative AI for image retrieval from plays showcases our dedication to pushing the boundaries of what technology can achieve in the realm of language.
-          Babel is not just a translation service; it signifies a paradigm shift in linguistic innovation. Join us on this journey to unlock the true potential of language and technology. Together, let's elevate communication to new heights at Babel, where the convergence of art and technology creates a transformative and inclusive linguistic experience.
-          
-          </div>
-        </div>
-    </div>
-      <div className={styles.meettheteam}>
-        <div className={styles.mttheading} id="section3" >
-        MEET THE TEAM
-        </div>
-        <div className={styles.aboutprojectbox}>
-        <Nexsuscard imagelink={diyad} pname={"Diya Dugar"} gitlink={"https://github.com/Diyadx"} gitdis={"@diyadx"}></Nexsuscard>
-        <Nexsuscard imagelink={pratyushk} pname={"Pratyush Kamal"} gitlink={"https://github.com/pratyush0000"} gitdis={"@pratyush0000"}></Nexsuscard>
-        <Nexsuscard imagelink={urvig} pname={"Urvi Gupta"} gitlink={"https://github.com/urviiigupta"} gitdis={"@urviiigupta"}></Nexsuscard>
-      </div>
-      </div>
-
-     
-      </div>
-
-
+</div>
  )
 }
+
 export default Product;
