@@ -13,6 +13,7 @@
 
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from "../components/Navbar";
 import image from "../assets/babel_home.png";
 import styles from './home.module.css';
@@ -38,8 +39,10 @@ const home = () => {
           </div>
 
           <div style={{ marginTop: '50px' }}>
-            <button className={styles.button}>Test It Out</button>
-            <button className={styles.button}>Who Are We?</button>
+            {/* <button className={styles.button}>Test It Out</button> */}
+            <Link to="/product" className={styles.button}>Test It Out</Link>
+            {/* <button className={styles.button}>Who Are We?</button> */}
+            <Link to="/aboutus" className={styles.button}>Who Are We?</Link>
           </div>
         </div>
         {/* Image div */}
