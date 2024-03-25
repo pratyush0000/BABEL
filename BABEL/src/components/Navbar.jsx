@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom'
 import styles from './Navbar.module.css'
 import logo from '../../src/assets/babellogo.png'
+
 const Navbar=()=>{
     return (
         <nav className={styles.nav}>
@@ -7,9 +9,9 @@ const Navbar=()=>{
             <img src={logo} alt="" className={styles.logo}/>
             </div>
             <ul>
-            <li><a  className={styles.removea} href="#section1">HOME</a></li>
-            <li><a className={styles.removea} href="#section2">PROJECT</a></li>
-            <li><a className={styles.removea} href="#section3">ABOUT US</a></li>
+            <li><Link to="/home" className={styles.removea}>HOME</Link></li>
+            <li><Link to="/product" className={styles.removea}>PRODUCT</Link></li>
+            <li><Link to="/aboutus" className={styles.removea}>ABOUT US</Link></li>
             </ul>
         </nav>
     )

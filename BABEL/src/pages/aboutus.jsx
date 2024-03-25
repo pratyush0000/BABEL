@@ -11,7 +11,7 @@ const Aboutus = () => {
     <>
       <Navbar/>
       <div className={styles.meettheteam}>
-        <div className={styles.mttheading} id="section3" >
+        <div className={styles.mttheading} >
             THE TEAM
         </div>
         <div className={styles.aboutprojectbox}>
