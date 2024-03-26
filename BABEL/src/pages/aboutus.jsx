@@ -1,4 +1,5 @@
 import React from 'react';
+import Ellipses from "../components/Ellipses";
 import Navbar from '../components/Navbar';
 import styles from './Aboutus.module.css';
 import Nexsuscard from '../components/Nexsuscard';
@@ -10,6 +11,7 @@ const Aboutus = () => {
   return(
     <>
       <Navbar/>
+      <Ellipses/>
       <div className={styles.meettheteam}>
         <div className={styles.mttheading} >
             THE TEAM
