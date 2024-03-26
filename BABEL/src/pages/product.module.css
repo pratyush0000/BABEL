@@ -72,6 +72,10 @@ body{
     padding: 8px;
 }
 
+.inputboxx::placeholder {
+    color: rgba(0, 20, 100, 0.7); /* Placeholder text color */
+  }
+
 /* yes */
 .submitbutton {
     /* background-color: #00BADD; */

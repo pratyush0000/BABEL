@@ -11,13 +11,13 @@ import Languages from '../components/Languages';
 const Product = () => {
   const Datatosend={
     fromlang:"en",
-    text:"please enter some text",
+    // text:"please enter some text",
     tolang:"es"
   }
 
   const [to,setto]=useState("nl");
   const [langfrom,setlangfrom]=useState("en");
-  const [inp,setinp]=useState("please enter some text");
+  const [inp,setinp]=useState("");
   const [outp,setoutp]=useState("");
   const [chatoutp,setchatoutp]=useState("")
   let key = "1b02f999b413471f888b01a67bf3e210";
@@ -157,7 +157,7 @@ const getspeech = (stringToSpeak, language) => {
       </div>
       <Selectbox languages={Languages} handleSelectChange={handleSelectChangefrom}></Selectbox>
       </div>
-    <textarea  value={inp} onChange={handleinpchange} className={styles.inputboxx}>
+    <textarea  value={inp} onChange={handleinpchange} className={styles.inputboxx} placeholder="Enter text here...">
     </textarea>
   </div>
   <div className={styles.flexelement}>
