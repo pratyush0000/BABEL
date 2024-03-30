@@ -74,7 +74,7 @@ axios({
       messages: [
         {
           role: 'user',
-          content: `${inp} I translated this text from ${langfrom} to ${to} and this is the result ${outp} I got from another translation service. please modify it to make it sound more natural. don't give any extra text as this output is being displayed in the other text box.`
+          content: `${inp} I translated this text from ${langfrom} to ${to} and this is the result ${outp} I got from another translation service. please modify it to make it sound more natural. if it's a poem or text which is more about the meaning try to keep the essence.don't give any extra text as this output is being displayed in the other text box.`
         }
       ],
       temperature: 1,
