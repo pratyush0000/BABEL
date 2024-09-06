@@ -20,8 +20,9 @@ const Product = () => {
   const [inp,setinp]=useState("");
   const [outp,setoutp]=useState("");
   const [chatoutp,setchatoutp]=useState("")
-  let key = "1b02f999b413471f888b01a67bf3e210";
+  let key = "248f6b52c8b742868475f775607af285";
   let endpoint = "https://api.cognitive.microsofttranslator.com/";
+  
   const OPENAI_API_KEY = import.meta.env.VITE_API_KEY;
   const handleinpchange=(event)=>{
   setinp(event.target.value)
@@ -44,7 +45,7 @@ axios({
   headers: {
       'Ocp-Apim-Subscription-Key': key,
        // location required if you're using a multi-service or regional (not global) resource.
-       'Ocp-Apim-Subscription-Region':'southeastasia',
+       'Ocp-Apim-Subscription-Region':'centralindia',
       'Content-type': 'application/json',
       'X-ClientTraceId': uuidv4().toString()
   },
